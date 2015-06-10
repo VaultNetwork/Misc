@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title> Quadcom Storage Solutions </title>
+
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="main.css" type="text/css" media="screen, print"/>
+
+    <!-- Jquery CDN to reduce space -->
+    <script src="http://vaultnetwork.github.io/Misc/files/jquery.min.js"></script>
+
+
+    <script src="http://vaultnetwork.github.io/Misc/files/jquery.transit.min.js"></script>
+
+
+
+
+
+
+    <!--//comments only work in script elements-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            /*fix this later so it only appears at the ned */
+                $('#backgroundchoice').css({ transformOrigin: '0px 0px' }).transition({ rotate: '-90deg' });
+                $('#backgroundchoice').css({ transformOrigin: '0px 0px' }).transition({ rotate: '0deg' });
+
+            var time = 1000;
+                $('#btnIndividual').transition({y:'270px'}, time);
+                /* cannot go anymore due to positoning */
+                $('#btnindividualtext').transition({y:'-270px'}, time);
+
+                $('#btnCompany').transition({y:'270px'}, time);
+                $('#btncompanytext').transition({y:'-270px'}, time);
+
+            $("a").click(function(event){
+                event.preventDefault();
+                linkLocation = this.href;
+                $('body').transition({ skewX: '30deg' });
+                $('body').transition({x:'2700px'}, 3000);
+                //fade out extreamly long so fade effects are not seen when moving
+                $("body").fadeOut(3000, redirectPage(linkLocation));
+            });
+
+            function redirectPage(link) {
+                document.location.href= "consumer.php";
+            }
+
+        });
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+        <img id="backgroundchoice" src="blackfur.jpg" height="100%" width=100% />
+
+        <a href="consumer.html"> <img id="btnIndividual" src="imgindividualgray.png"/> </a>
+        <h1 id="btnindividualtext"> Consumers </h1>
+
+        <a href="server.html"> <img id="btnCompany" src="imgcompanygray.png"/>  </a>
+        <h1 id="btncompanytext"> Servers </h1>
+
+
+
+
+
+
+    <!-- Preloader Section, loads at side, extra, then centres it into middle screen. Fades in then fades out background -->
+<!--      <div id="clickme">
+         Click here
+     </div>
+     <div id="logo">
+         <img src="quadcomlogo.png"  width="120%" height="120%" />
+     </div>
+
+
+-->
+</body>
+
+</html>

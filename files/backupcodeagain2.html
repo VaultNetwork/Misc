@@ -1,0 +1,277 @@
+<html>
+
+<head>
+    <title> Quadcom Storage Solutions </title>
+
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="main.css" type="text/css" media="screen, print"/>
+
+    <!-- Jquery CDN to reduce space -->
+    <script src="http://vaultnetwork.github.io/Misc/files/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://vaultnetwork.github.io/Misc/files/jquery-ui.min.css" />
+    <script src="http://vaultnetwork.github.io/Misc/files/jquery-ui.min.js"></script>
+
+
+    <script src="http://vaultnetwork.github.io/Misc/files/jquery.transit.min.js"></script>
+
+
+    <script src="http://vaultnetwork.github.io/Misc/files/jquery.colorbox.js"></script>
+
+
+
+
+    <!--//comments only work in script elements-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#headerbar').hide();
+
+            $('#headerbar').fadeIn(2000);
+
+            $('#SSDtxt').hide();
+            $('#SSD1txt').hide();
+            $('#SSD2txt').hide();
+            $('#SSD3txt').hide();
+            $('#SSD4txt').hide();
+            $('#SSD5txt').hide();
+            $('#SSD6txt').hide();
+            $('#SSD7txt').hide();
+            $('#SSD8txt').hide();
+            $('#SSD9txt').hide();
+
+
+            $('#btnSSD').mouseover(function() {
+                $('#SSDtxt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSDtxt').hide();
+            });
+
+            $('#btnSSD1').mouseover(function() {
+                $('#SSD1txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD1txt').hide();
+            });
+
+            $('#btnSSD2').mouseover(function() {
+                $('#SSD2txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD2txt').hide();
+            });
+
+            $('#btnSSD3').mouseover(function() {
+                $('#SSD3txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD3txt').hide();
+            });
+
+            $('#btnSSD4').mouseover(function() {
+                $('#SSD4txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD4txt').hide();
+            });
+
+            $('#btnSSD5').mouseover(function() {
+                $('#SSD5txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD5txt').hide();
+            });
+
+            $('#btnSSD6').mouseover(function() {
+                $('#SSD6txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD6txt').hide();
+            });
+
+            $('#btnSSD7').mouseover(function() {
+                $('#SSD7txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD7txt').hide();
+            });
+
+            $('#btnSSD8').mouseover(function() {
+                $('#SSD8txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD8txt').hide();
+            });
+
+            $('#btnSSD9').mouseover(function() {
+                $('#SSD9txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD9txt').hide();
+            });
+
+            $('#btnSSD10').mouseover(function() {
+                $('#SSD10txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD10txt').hide();
+            });
+
+            $('#btnSSD11').mouseover(function() {
+                $('#SSD11txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD11txt').hide();
+            });
+
+            $('#btnSSD12').mouseover(function() {
+                $('#SSD12txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD12txt').hide();
+            });
+
+            $('#btnSSD13').mouseover(function() {
+                $('#SSD13txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD13txt').hide();
+            });
+
+            $('#btnSSD14').mouseover(function() {
+                $('#SSD14txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD14txt').hide();
+            });
+
+            $('#btnSSD15').mouseover(function() {
+                $('#SSD15txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD15txt').hide();
+            });
+
+            $('#btnSSD16').mouseover(function() {
+                $('#SSD16txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD16txt').hide();
+            });
+
+
+           /* $('#btnSSD10').mouseover(function() {
+                $('#SSD10txt').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#SSD10txt').hide();
+            }); */
+
+            var btnnames = ["#btnSSD","#btnSSD1","#btnSSD2","#btnSSD3","#btnSSD4","#btnSSD5","#btnSSD6", "#btnSSD7","#btnSSD8","#btnSSD9","#btnSSD10"];
+           // var btnnamestext = ["#SSDtxt","#SSD1txt","#SSD2txt","#SSD3txt","#SSD4txt","#SSD5txt","#SSD6txt","#SSD7txt", "#SSD8txt","#SSD9txt"];
+
+            var i;
+            for (i = 0; i < btnnames.length; i++) {
+                $(btnnames[i]).mouseover(function() {
+                    $(this).transition({y:'-25px'});
+                //    $(btnnamestext[i]).show();
+                }).mouseout(function() {
+                    //0px refers to the origin, not it's travel distance
+                    $(this).transition({y:'0px'});
+                 //   $(btnnamestext[i]).hide();
+
+
+                });
+            }
+
+            $('#menu').mouseover(function() {
+                $('#footerbar').show();
+            }).mouseout(function() {
+                //0px refers to the origin, not it's travel distance
+                $('#footerbar').hide();
+            });
+
+
+        });
+
+
+
+
+
+    </script>
+
+</head>
+<div id="headerbar">
+    <h1 id="SSDtxt">Kingston SSDNow V300 Drive</h1>
+    <h1 id="SSD1txt">Kingston SSDNow V310 Drive</h1>
+    <h1 id="SSD2txt">Kingston HyperX FURY SSD</h1>
+    <h1 id="SSD3txt">Kingston HyperX FURY SSD</h1>
+    <h1 id="SSD4txt">Kingston Predator PCIe SSD</h1>
+    <h1 id="SSD5txt">Kingston SSDNow KC380 Drive</h1>
+    <h1 id="SSD6txt">Kingston SSDNow KC300 Drive</h1>
+    <h1 id="SSD7txt">Kingston SSDNow KC310 Drive</h1>
+    <h1 id="SSD8txt">Samsung SSD 850 PRO 2.5-inch</h1>
+    <h1 id="SSD9txt">Samsung SSD 850 EV0</h1>
+    <h1 id="SSD10txt">Samsung SSD 850 EV0</h1>
+    <h1 id="SSD11txt">Sandisk SSD</h1>
+    <h1 id="SSD12txt">Sandisk SSD Plus</h1>
+    <h1 id="SSD13txt">Sandisk Ultra Plus SSD</h1>
+    <h1 id="SSD14txt">Samsung SSD 850 EV0</h1>
+    <h1 id="SSD15txt">Samsung SSD 850 EV0</h1>
+    <h1 id="SSD16txt">Samsung SSD 850 EV0</h1>
+
+
+
+    <h1 id="menu">Menu</h1>
+
+</div>
+
+<!--<div id="footerbar">
+
+</div> -->
+
+<img style="position: fixed; z-index: -99;" id="backgroundchoice" src="whitefur.jpg" height="100%" width=100% />
+
+
+
+<a id="btnSSD" href=""> <img src="http://media.kingston.com/images/products/prodSSD-V300-thumb.png"/></a>
+<a  id="btnSSD1" href=""> <img src="http://media.kingston.com/images/products/prodSSD-V310-thumb.png"></a>
+<a img id="btnSSD2" href="consumerinternalhdd.html"> <img src="http://media.kingston.com/images/mem_hyperx/prodSSD-HX_FURY-thumb.png"/></a>
+<a id="btnSSD3" href="consumerexternalhdd.html"> <img src="http://media.kingston.com/images/products/prodSSD-Savage-thumb.png"/> </a>
+<a id="btnSSD4" href="consumerthumbdrive.html"> <img src="http://media.kingston.com/images/products/prodSSD-PCIe-thumb.png"/></a>
+<a id="btnSSD5" href="consumermemorycard.html"> <img src="http://media.kingston.com/images/products/prodSSD-KC380-thumb.png"/> </a>
+<a id="btnSSD6" href="consumermemorycard.html"> <img   src="http://media.kingston.com/images/products/prodSSD-kc300-thumb.png"/> </a>
+<a id="btnSSD7" href="consumermemorycard.html"> <img src="http://media.kingston.com/images/products/prodSSD-kc310-thumb.png"/> </a>
+<a id="btnSSD8" href="consumermemorycard.html"> <img src="samsungredssd.png"/></a>
+<a id="btnSSD9" href="consumermemorycard.html"> <img src="samsungreyssd.png"/></a>
+<a id="btnSSD10" href="consumermemorycard.html"> <img src="samsungportablessd.png"/></a>
+
+<!--<a id="btnSSD11" href=""> <img src="sandiskssd.png"/> </a>
+<a id="btnSSD12" href=""> <img src="sandiskssdplus.png"/></a>
+<a id="btnSSD13" href=""> <img src="sandiskultraplus.png"/></a>
+<a id="btnSSD14" href=""> <img src="sandiskultra2ssd.png"/></a>
+<a id="btnSSD15" href=""> <img src="sandiskultra2mssd.png"/></a>
+<a id="btnSSD16" href=""> <img src="sandiskextreamprossd.png"/></a>
+
+   <!-- <a href="consumermemorycard.html"> <img  id="btnSSD10" src="samsungreyssd.png"/>  </a>
+    <a href="consumermemorycard.html"> <img  id="btnSSD11" src="samsungreyssd.png"/>  </a>
+    <a href="consumermemorycard.html"> <img  id="btnSSD12" src="samsungreyssd.png"/>  </a>
+    <a href="consumermemorycard.html"> <img  id="btnSSD13" src="samsungreyssd.png"/>  </a>
+    <a href="consumermemorycard.html"> <img  id="btnSSD14" src="samsungreyssd.png"/>  </a>
+
+    <!-- Laptop HDD Seagate -->
+
+
+<!-- Preloader Section, loads at side, extra, then centres it into middle screen. Fades in then fades out background -->
+<!--      <div id="clickme">
+         Click here
+     </div>
+     <div id="logo">
+         <img src="quadcomlogo.png"  width="120%" height="120%" />
+     </div>
+
+
+-->
+</body>
+
+</html>
